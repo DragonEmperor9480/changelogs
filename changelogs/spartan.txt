@@ -1,1 +1,11 @@
-test
+ProjectMatrixx 10.2.1 changelogs:
+
+▫️Improved Haptics
+▫️Decrypted by default 
+▫️Gapps included 
+▫️included Gdialer,contacts and messages 
+▫️Synced with Latest sources
+▫️January Security patch
+▫️Custom Kernels Supported
+▫️Improved battery backup
+▫️Added OTA Supported

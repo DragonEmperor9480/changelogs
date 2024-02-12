@@ -1,3 +1,17 @@
+ProjectMatrixx 10.3.0 changelogs:
+
+▪️ Added Pikachu kernel as default
+▪️ Fixed background crashes
+▪️ Merge lineage patches
+▪️ Added min/max refresh rate
+▪️ Added OnePlus Dolby(from PA)
+▪️ reduced logspam
+* Fixed some known realme camera errors
+* Fixed Genshin Impact and some crashes
+* Fixed low mic issue
+
+
+----------------------------------------------------------
 ProjectMatrixx 10.2.1 changelogs:
 
 ▫️Improved Haptics

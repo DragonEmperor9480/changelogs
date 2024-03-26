@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Date Filter</title>
+<script src="angular.min.js">
+</script>
+</head>
+<body>
+<div ng-app="firstApp" ng-controller="firstCntrl">
+<h1> DATE FORMATS</h1>
+<p>{{ today | date : "dd.MMMM.yyyy" }}</p> 
+<p>{{ today | date : "d.MMMM.yyyy" }}</p>
+<p>{{ today | date : "d.MMM.yyyy" }}</p> 
+<p>{{ today | date : "d.MM.yyyy" }}</p> 
+<p>{{ today | date : "d.M.yyyy" }}</p> 
+<p>{{ today | date : "d.M.yy" }}</p>
+<p>{{ today | date : "d.M.y" }}</p>
+<p>{{ today | date : "short" }}</p>
+<p>{{ today | date : "medium" }}</p>
+<p>{{ today | date : "shortDate" }}</p>
+<p>{{ today | date : "mediumDate" }}</p>
+<p>{{ today | date : "longDate" }}</p> 
+<p>{{ today | date : "fullDate" }}</p> 
+</div>
+<script>
+var app = angular.module('firstApp', []);
+app.controller('firstCntrl', function($scope) {
+$scope.today = new Date();
+});
+</script>
+</body> </html>

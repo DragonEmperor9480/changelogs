@@ -1,0 +1,83 @@
+<html>
+<script src="angular.min.js">
+</script>
+<body>
+    <div ng-app="myApp" ng-controller="ListController">
+<h1 align='center'>Student Details</h1>
+<table border=1 align='center'>
+<tr>
+<th>Roll.No</th>
+<th>Name</th>
+<th>City</th>
+<th>Mobile No.</th>
+<th>CGPA</th>
+</tr>
+<tr ng-repeat="item in itemsDetails">
+<td> {{item.Rollno}} </td>
+<td> {{item.name}} </td>
+<td> {{item.city}} </td>
+<td> {{item.mobileno}} </td>
+<td>{{item.CGPA}}</td>
+</tr>
+</table><br><br>
+<p align='center'> The Number Of Student Details In The Table : {{hrr}}</p>
+</div>
+</body>
+<script>
+var app = angular.module('myApp', []);
+app.controller('ListController', function($scope) {
+$scope.itemsDetails = [
+{
+Rollno: 01,
+name: 'Ragu ',
+city: 'Karanatak ',
+mobileno: 9978689865 ,
+CGPA:9.9 ,
+},
+{
+Rollno: 02,
+name: 'Adhir',
+city: 'Pune',
+mobileno: 9978657865,
+CGPA:7.9,
+},
+{
+Rollno: 03,
+name: 'Adhira',
+city: 'tamilanadu',
+mobileno: 8778657865,
+CGPA:8.23,
+},
+{
+Rollno: 04,
+name: 'Sanket',
+city: 'Mumbai',
+mobileno: 8978657865,
+CGPA:7.9,
+},
+{
+Rollno: 05,
+name: 'Tanveer',
+city: 'keral',
+mobileno: 9967657865,
+CGPA:6.34,
+},
+{
+Rollno: 06,
+name: 'Sameer',
+city: 'Tamilanadu',
+mobileno: 9945657865,
+CGPA:8.889,
+},
+{
+Rollno: 07,
+name: 'Sudhira',
+city: 'Gujarata',
+mobileno: 8878657865,
+CGPA:6.9,
+}
+];
+$scope.hrr=$scope.itemsDetails.length;
+});
+</script>
+</html>

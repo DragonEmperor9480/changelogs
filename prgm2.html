@@ -1,0 +1,42 @@
+<html>
+    <script src="angular.min.js"></script>
+<body>
+
+    <div ng-app="CA" ng-controller="CC">
+        <p><input type="number" ng-model="a">Choose First Number</p>
+        <p><input type="number" ng-model="b">Choose Second Number</p>
+        <p><select ng-model="operator"></select>
+            <option></option>
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>Choose Operator</p>
+        <p>{{result()}}</p>
+    </div>
+    <script>
+        
+        var app = angular.module('CA', []);
+        app.controller('CC',function($scope)
+        {
+            $scope.result=function()
+            {
+                if($scope.operator=='+'){
+                    return $scope.a+$scope.b;
+                }
+                if($scope.operator=='-'){
+                    return $scope.a-$scope.b;
+                }
+                if($scope.operator=='*'){
+                    return $scope.a*$scope.b;
+                }
+                if($scope.operator=='/'){
+                    return $scope.a/$scope.b;
+                }
+            };
+        });
+    </script>
+
+    
+</body>
+    </html>

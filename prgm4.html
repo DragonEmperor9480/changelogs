@@ -1,0 +1,38 @@
+<html>
+<script src= "angular.min.js"></script>
+
+<body ng-app="myModule" ng-controller="findFactorial">
+    <div>Enter a Number: 
+    <input type="text" ng-model="a"></p><br>
+    <input type="button" ng-click="calculateFactorial()" value="calculateFactorial">
+    <input type="button" ng-click="calculateSquare()" value="calculateSquare"><br><br>
+     {{result}}
+    </div>
+    </body>
+
+<script>
+var myApp = angular.module('myModule', []);
+ myApp.controller('findFactorial', function($scope) {
+ $scope.calculateFactorial = function() {
+ var num=parseInt($scope.a);
+ var i, fact=1;
+ if(num<0)
+ {
+ $scope.result="NOT defined factorial"; 
+ }
+ else
+{
+ for(i=num;i>=1;i--)
+ fact=fact*i;
+ $scope.result="factorial Of " + num + " is " + fact;
+}
+}
+$scope.calculateSquare=function()
+ {
+ var n1=parseInt($scope.a)
+ var square=n1*n1;
+ $scope.result="Square Of " + n1 + " is " + square;
+}
+});
+</script>
+</html>
